@@ -1,0 +1,787 @@
+<html>
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Indie+Flower|Teko" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('photo').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('textbox').innerHTML=document.getElementById(id).innerHTML}</script>
+<style type="text/css">
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #FF423A;}
+
+.tabs {
+width: 100%;
+height: 100%;
+display: block; 
+}
+
+h1 {
+font-size: 30;
+text-align: center;
+font-family: 'Teko', sans-serif;
+color: #FF423A;
+}
+
+h2 {
+font-size: 15;
+font-family: 'Teko', sans-serif;
+color: #FF423A;
+}
+
+#container {
+position: absolute;
+top: 0%; 
+left: 0%;
+width: 100%; 
+height: 100%; 
+background: url("https://i.imgur.com/JwFizTi.png");
+background-size: 100% 100%; 
+}
+
+#gif {
+position: fixed;
+top: 60%;
+left: 62%;
+height: 40%;
+width: 40%;
+background: url("https://i.imgur.com/pnl6d4O.gif");
+background-size: 100% 100%; 
+}
+
+#bubbles1 {
+position: fixed;
+top: 65%;
+left: 80%;
+height: 6%;
+width: 6%;
+background: url("https://i.imgur.com/iwF7Znk.png");
+background-size: 100% 100%;
+}
+
+#cloud1 {
+position: fixed;
+top: 55%;
+left: 80%;
+height: 10%;
+width: 10%;
+background: url("https://i.imgur.com/xN5VTiT.png");
+background-size: 100% 100%; 
+}
+
+#cloudbox1 {
+position: fixed;
+top: 57%;
+left: 83.5%;
+height: 5.5%;
+width: 2.5%;
+background: url("https://i.imgur.com/Ph8NlVZ.png");
+background-size: 100% 100%; 
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: (100%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cloudbox1:hover {
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: (0%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cloud2 {
+position: fixed;
+top: 35%;
+left: 80%;
+height: 10%;
+width: 10%;
+background: url("https://i.imgur.com/xN5VTiT.png");
+background-size: 100% 100%; 
+}
+
+#cloudbox2 {
+position: fixed;
+top: 37%;
+left: 83.5%;
+height: 5.5%;
+width: 2.5%;
+background: url("https://i.imgur.com/rp4Kn5N.png");
+background-size: 100% 100%; 
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: (100%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cloudbox2:hover {
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: (0%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cloud3 {
+position: fixed;
+top: 35%;
+left: 70%;
+height: 10%;
+width: 10%;
+background: url("https://i.imgur.com/xN5VTiT.png");
+background-size: 100% 100%; 
+}
+
+#cloudbox3 {
+position: fixed;
+top: 37%;
+left: 73.5%;
+height: 5.5%;
+width: 2.5%;
+background: url("https://i.imgur.com/hatJquW.png");
+background-size: 100% 100%; 
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: (100%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cloudbox3:hover {
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: (0%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cloud4 {
+position: fixed;
+top: 35%;
+left: 90%;
+height: 10%;
+width: 10%;
+background: url("https://i.imgur.com/xN5VTiT.png");
+background-size: 100% 100%; 
+}
+
+#cloudbox4 {
+position: fixed;
+top: 37%;
+left: 93.5%;
+height: 5.5%;
+width: 2.5%;
+background: url("https://i.imgur.com/Wxodq9t.png");
+background-size: 100% 100%; 
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: (100%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cloudbox4:hover {
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: (0%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cloud5 {
+position: fixed;
+top: 45%;
+left: 90%;
+height: 10%;
+width: 10%;
+background: url("https://i.imgur.com/xN5VTiT.png");
+background-size: 100% 100%; 
+}
+
+#cloudbox5 {
+position: fixed;
+top: 47%;
+left: 93.5%;
+height: 5.5%;
+width: 2.5%;
+background: url("https://i.imgur.com/qwFkwHM.png");
+background-size: 100% 100%; 
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: (100%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cloudbox5:hover {
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: (0%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cloud6 {
+position: fixed;
+top: 45%;
+left: 70%;
+height: 10%;
+width: 10%;
+background: url("https://i.imgur.com/xN5VTiT.png");
+background-size: 100% 100%; 
+}
+
+#cloudbox6 {
+position: fixed;
+top: 47%;
+left: 73.5%;
+height: 5.5%;
+width: 2.5%;
+background: url("https://i.imgur.com/dCPtvQd.png");
+background-size: 100% 100%; 
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: (100%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cloudbox6:hover {
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: (0%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#navbar {
+position: fixed;
+top: 20%;
+left: 0%;
+height: 50%;
+width: 15%;
+background: url("https://i.imgur.com/PBK3VHx.png"); 
+background-size: 100% 100%;
+}
+
+#header1 {
+position: fixed;
+top: 26%;
+left: 2%;
+height: 5%;
+width: 10%;
+font-family: 'Indie Flower', cursive;
+text-align: center;
+}
+
+#hover1 {
+position: fixed;
+top: 26%;
+left: 2%;
+height: 3%;
+width: 10%;
+}
+
+#hover1:hover {
+border: 2px solid #ff0000;
+}
+
+#header2 {
+position: fixed;
+top: 31%;
+left: 2%;
+height: 5%;
+width: 10%;
+font-family: 'Indie Flower', cursive;
+text-align: center;
+}
+
+#hover2 {
+position: fixed;
+top: 31%;
+left: 2%;
+height: 3%;
+width: 10%;
+}
+
+#hover2:hover {
+border: 2px solid #ff0000;
+}
+
+#header3 {
+position: fixed;
+top: 37%;
+left: 2%;
+height: 5%;
+width: 10%;
+font-family: 'Indie Flower', cursive;
+text-align: center;
+}
+
+#hover3 {
+position: fixed;
+top: 37%;
+left: 2%;
+height: 3%;
+width: 10%;
+}
+
+#hover3:hover {
+border: 2px solid #ff0000;
+}
+
+#header4 {
+position: fixed;
+top: 43%;
+left: 2%;
+height: 5%;
+width: 10%;
+font-family: 'Indie Flower', cursive;
+text-align: center;
+}
+
+#hover4 {
+position: fixed;
+top: 43%;
+left: 2%;
+height: 3%;
+width: 10%;
+}
+
+#hover4:hover {
+border: 2px solid #ff0000;
+}
+
+#header5 {
+position: fixed;
+top: 49%;
+left: 2%;
+height: 5%;
+width: 10%;
+font-family: 'Indie Flower', cursive;
+text-align: center;
+}
+
+#hover5 {
+position: fixed;
+top: 49%;
+left: 2%;
+height: 3%;
+width: 10%;
+}
+
+#hover5:hover {
+border: 2px solid #ff0000;
+}
+
+#pic {
+position: fixed;
+top: 0%;
+left: 0%;
+height: 20%;
+width: 10%;
+background: url("https://i.imgur.com/1xGfsNW.png");
+background-size: 100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic:hover {
+background: url("https://i.imgur.com/SYLUqYN.png");
+background-size: 100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#line1 {
+position: fixed;
+top: 5%;
+left: 9%;
+width: 10.5%;
+height: 0.5%;
+background: #FF423A;
+}
+
+#name {
+position: fixed;
+top: 2.5%;
+left: 9%;
+width: 10.5%;
+height: 1%;
+font-family: 'Teko', sans-serif;
+text-align: center; 
+font-size: 17;
+}
+
+#line2 {
+position: fixed;
+top: 11%;
+left: 9.5%;
+width: 	10%;
+height: 0.5%;
+background: #FF423A;
+}
+
+#trees {
+position: fixed;
+top: 8.5%;
+left: 9.5%;
+width: 10.5%;
+height: 1%;
+font-family: 'Teko', sans-serif;
+text-align: center; 
+font-size: 17;
+}
+
+#line3 {
+position: fixed;
+top: 17%;
+left: 8%;
+width: 	11.5%;
+height: 0.5%;
+background: #FF423A;
+}
+
+#ranks {
+position: fixed;
+top: 14.4%;
+left: 8.5%;
+width: 12%;
+height: 1%;
+font-family: 'Teko', sans-serif;
+text-align: center;
+font-size: 17;
+}
+
+#picture1 {
+position: fixed;
+top: 5%;
+left: 75%;
+width: 20%;
+height: 30%;
+background: url("https://i.imgur.com/RSuXwIX.png");
+background-size: 100% 100%;
+}
+
+#gif1 {
+position: fixed;
+top: 6%;
+left: 76.3%;
+width: 17.2%;
+height: 27%;
+background: url("https://i.imgur.com/4XOYQFJ.gif");
+background-size: 100% 100%;
+}
+
+#picture2 {
+position: fixed;
+top: 5%;
+left: 55%;
+width: 20%;
+height: 30%;
+background: url("https://i.imgur.com/RSuXwIX.png");
+background-size: 100% 100%;
+}
+
+#gif2 {
+position: fixed;
+top: 6%;
+left: 56.3%;
+width: 17.2%;
+height: 27%;
+background: url("https://i.imgur.com/3sTOw69.gif");
+background-size: 100% 100%;
+}
+
+#picture3 {
+position: fixed;
+top: 5%;
+left: 35%;
+width: 20%;
+height: 30%;
+background: url("https://i.imgur.com/RSuXwIX.png");
+background-size: 100% 100%;
+}
+
+#gif3 {
+position: fixed;
+top: 6%;
+left: 36.3%;
+width: 17.2%;
+height: 27%;
+background: url("https://i.imgur.com/olPf64w.gif");
+background-size: 100% 100%;
+}
+
+#picture4 {
+position: fixed;
+top: 5%;
+left: 20%;
+width: 15%;
+height: 30%;
+background: url("https://i.imgur.com/RSuXwIX.png");
+background-size: 100% 100%;
+}
+
+#gif4 {
+position: fixed;
+top: 6%;
+left: 20.8%;
+width: 13%;
+height: 27%;
+background: url("https://i.imgur.com/Vbz0thV.gif");
+background-size: 100% 100%;
+}
+
+#book {
+position: fixed;
+top: 35%;
+left: 20%;
+width: 25%;
+height: 60%;
+background: url("https://i.imgur.com/M3iRPJ4.jpg");
+background-size: 100% 100%;
+}
+
+#textbox {
+position: fixed;
+top: 37%;
+left: 22.5%;
+width: 22%;
+height: 56%;
+font-family: 'EB Garamond', serif;
+font-size: 11;
+color: #000000;
+background-size: 100% 100%;
+overflow: auto; 
+}
+
+#book2 {
+position: fixed;
+top: 35%;
+left: 45.2%;
+width: 25%;
+height: 60%;
+background: url("https://i.imgur.com/gOebjTV.jpg");
+background-size: 100% 100%;
+}
+
+#frame {
+position: fixed;
+top: 35%;
+left: 44.5%;
+width: 25%;
+height: 60%;
+background: url("https://i.imgur.com/RQq382E.png");
+background-size: 100% 100%;
+}
+
+#photo {
+position: fixed;
+top: 40%;
+left: 47.5%;
+width: 19%;
+height: 39.5%;
+-webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+  filter: sepia(100%);
+background-size: 100% 100%;
+}
+
+#photo:hover {
+-webkit-filter: sepia(0%); /* Safari 6.0 - 9.0 */
+  filter: sepia(0%);
+  -webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#marker {
+position: fixed;
+top: 25%;
+left: 14%;
+height: 40%;
+width: 2.5%;
+background: url("https://i.imgur.com/iG0DyY3.png");
+background-size: 100% 100%;
+}
+
+#img1 {
+position: fixed;
+top: 25%;
+left: 14%;
+height: 8%;
+width: 4%;
+background: url("https://i.imgur.com/f1Zb3Q8.jpg");
+background-size: 100% 100%;
+border: 2px solid #FF423A;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#img1:hover {
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%)
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#img2 {
+position: fixed;
+top: 35%;
+left: 14%;
+height: 8%;
+width: 4%;
+background: url("https://i.imgur.com/eXGr5RC.jpg");
+background-size: 100% 100%;
+border: 2px solid #FF423A;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#img2:hover {
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%) 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#img3 {
+position: fixed;
+top: 45%;
+left: 14%;
+height: 8%;
+width: 4%;
+background: url("https://i.imgur.com/7LCQu62.jpg");
+background-size: 100% 100%;
+border: 2px solid #FF423A;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#img3:hover {
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%)
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#img4 {
+position: fixed;
+top: 55%;
+left: 14%;
+height: 8%;
+width: 4%;
+background: url("https://i.imgur.com/GvtExIw.jpg");
+background-size: 100% 100%;
+border: 2px solid #FF423A;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#img4:hover {
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%) 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#photo1,#photo2,#photo3,#photo4,#photoemily,#photox,#photogossamer,#photolynne,#photozinnia,#photojune,#basic,#detail,#history,#faith,#magus,#textemily,#textjune,#textzinnia,#textlynne,#textx,#textgossamer {
+display: none;
+}
+
+
+
+</style>
+<div id="container"><div id="gif"></div><div id="navbar"></div>
+<div id="header1">Basic Information</div>
+<div id="hover1"><span class="tabs" onClick="changeNavigation1 ('basic')"></span></div>
+<div id="header2">Detailed Information</div>
+<div id="hover2"><span class="tabs" onClick="changeNavigation1 ('detail')"></span></div>
+<div id="header3">History</div>
+<div id="hover3"><span class="tabs" onClick="changeNavigation1 ('history')"></span></div>
+<div id="header4">Faith Magic</div>
+<div id="hover4"><span class="tabs" onClick="changeNavigation1 ('faith')"></span></div>
+<div id="header5">Magus Manatism</div>
+<div id="hover5"><span class="tabs" onClick="changeNavigation1 ('magus')"></span></div></div>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="line3"></div>
+<div id="pic"></div>
+<div id="gif1"></div>
+<div id="picture1"></div>
+<div id="gif2"></div>
+<div id="picture2"></div>
+<div id="gif3"></div>
+<div id="picture3"></div>
+<div id="gif4"</div>
+<div id="picture4"></div>
+<div id="book"></div>
+<div id="book2"></div>
+<div id="frame"></div>
+<div id="photo1"><img style="width:100%;height:100%;" src="https://i.imgur.com/VkxHJh0.jpg"></div>
+<div id="photo"><img style="width:100%;height:100%;" src="https://i.imgur.com/VkxHJh0.jpg"></div>
+<div id="photo2"><img style="width:100%;height:100%;" src="https://i.imgur.com/arAbyG5.jpg"></div>
+<div id="photo3"><img style="width:100%;height:100%;" src="https://i.imgur.com/AofkhLY.jpg"></div>
+<div id="photo4"><img style="width:100%;height:100%;" src="https://i.imgur.com/LW6xJ8n.jpg"></div>
+<div id="photoemily"><img style="width:100%;height:100%;" src="https://i.imgur.com/Ph8NlVZ.png"></div>
+<div id="photogossamer"><img style="width:100%;height:100%;" src="https://i.imgur.com/qwFkwHM.png"></div>
+<div id="photox"><img style="width:100%;height:100%;" src="https://i.imgur.com/dCPtvQd.png"></div>
+<div id="photolynne"><img style="width:100%;height:100%;" src="https://i.imgur.com/hatJquW.png"></div>
+<div id="photozinnia"><img style="width:100%;height:100%;" src="https://i.imgur.com/Wxodq9t.png"></div>
+<div id="photojune"><img style="width:100%;height:100%;" src="https://i.imgur.com/rp4Kn5N.png"></div>
+<div id="img1"><span class="tabs" onClick="changeNavigation ('photo1')"></span></div>
+<div id="img2"><span class="tabs" onClick="changeNavigation ('photo2')"></span></div>
+<div id="img3"><span class="tabs" onClick="changeNavigation ('photo3')"></span></div>
+<div id="img4"><span class="tabs" onClick="changeNavigation ('photo4')"></span></div>
+<div id="bubbles1"></div>
+<div id="cloud1"></div>
+<div id="cloudbox1"><span class="tabs" onClick="changeNavigation ('photoemily'); changeNavigation1 ('textemily')"></span></div>
+<div id="cloud2"></div>
+<div id="cloudbox2"><span class="tabs" onClick="changeNavigation ('photojune'); changeNavigation1 ('textjune')"></span></div>
+<div id="cloud3"></div>
+<div id="cloudbox3"><span class="tabs" onClick="changeNavigation ('photolynne'); changeNavigation1 ('textlynne')"></span></div>
+<div id="cloud4"></div>
+<div id="cloudbox4"><span class="tabs" onClick="changeNavigation ('photozinnia'); changeNavigation1 ('textzinnia')"></span></div>
+<div id="cloud5"></div>
+<div id="cloudbox5"><span class="tabs" onClick="changeNavigation ('photogossamer'); changeNavigation1 ('textgossamer')"></span></div>
+<div id="cloud6"></div>
+<div id="cloudbox6"><span class="tabs" onClick="changeNavigation ('photox'); changeNavigation1 ('textx')"></span></div>
+<div id="name">Jackson Bello</div>
+<div id="trees">Seven Years Old</div>
+<div id="ranks">High Mage: Faith+Magus</div>
+<div id="textbox"><h1>The Following Character...</h1>Is primarily for use in the Ulreich University group magic school role play. For more information on the group, and to apply, please <a target="_blank" href="http://ulreich.weebly.com">click on this text.</a> Use the list in the notebook at the far left to navigate through information regarding Jackson Bello, and click on the small picture boxes to the right of the notebook to cycle through his images. Notable characters in Jackson’s life appear in thought clouds to the right hand side of the profile, and these will update at a (relatively slow) pace as more development with others occurs in his storyline. Although created for Ulreich University, Jackson may still be used in other groups (rules permitting) and in pm roleplay, although this is typically rare. Message me (on this account, or Ulreich) for any questions regarding this character or the roleplay he belongs to. The song used in the profile is currently “Shadows” by Roosevelt. You can check them out by <a target="_blank" href="https://www.youtube.com/watch?v=jQqNi_memTo">clicking on this text.</a> None of the images on the profile belong to me, as I manage to find their original sources I will link them below, but please feel free to pm me if you need a source for a particular image.</div>
+<div id="basic"><h1>Overview</h1><u>Full Name:</u> Jackson Jacob Bello<br><u>Age:</u> Seven Years Old<br><u>Height:</u> 4’0<br><u>Gender:</u> Male<br><u>Eye Color:</u> Dull Green/Gray<br><u>Hair Color:</u> Ash Black<br><u>Dexterity:</u> Right Hand Dominant.<br><br>Jackson Bello is a young boy from the New World, having been born and raised in the American midwest for most of his life. After the passing of his terminally ill mother, Jackson fled from the discomfort of his estranged fathers home, orphaning himself and eventually discovering the magical world after escaping an encounter with a malevolent spirit. Being subjected to the natural energies of the old world has awakened his potential from magic, bolstering his health and turning him into a fiery and stubborn explorer, who eventually came to find Ulreich University, a place he hoped to increase his knowledge of the arts.</div>
+<div id="detail"><h1>Appearance</h1>Standing in at near exactly four feet tall, there is no secret to the youth of Jackson Bello. His round, cherubian face, while oft littered with bruises and other silly injuries, express his age of seven years almost as clear as the rings inside of a tree, jaw firm but plump, accentuating his childishness with every pout and frown. His dull gray eyes are large and expressive, typically open in shameless curiosity and quick to boil over with tempered rage when (easily) provoked. In a slight irony, his body is far less demanding than his face; while usually covered by clothing, Jackson is very thin for his age, and even sickly in terms of any skin below the line of his neck, littered with bandaged injuries and an unhealthy sheen. His illness is contained slightly by faith magic but can be very easily observed, even on his face when tired or unwell; despite this, he carries himself with a massive confidence, having felt liberated by the fact he is even healthy enough to leave a hospital.<br><br>In terms of his attire, Jackson possesses above average fashion sense for a child of his age, having been trained intensely by his artist of a mother, finding pride in being able to dress himself properly. A fine assortment of basketball shorts and jeans line his suitcase, and these pants accompanied by either sweaters or T-shirts of matching colors, and constitute his everyday wear. A few suits and more fashionable clothes are locked away in his belongings as well, still listening to the ghost of his mother who reminds him to only wear such things when they are needed.<br><br><h1>Personality</h1>Since arriving in the Esmerelda Isles, Jackson has finally found his chance to act and behave as what he believes “normal kids” do. Contrasting the irony of the magical world around him, the young boy is filled with adventure and good intentions, but this can sometimes be undercut by his intense appetite for anger. Since early childhood, he has held extreme difficulty with dealing with sadness or complex emotions, converting them to anger and throwing tantrums and bursts of rage in order to deal with his own issues.  Despite sometimes sounding or acting rude, he has no ill will directed at the innocent, and would never do anything drastic to anyone without provocation. In many ways, his childish innocence can overtake his anger; the introduction into magic in his life has made him believe he must help others any way he can, although he is not accustomed to the horrors of actually participating in magical affairs. His friendship is fast and intense, but loyal to an extreme fault; Jackson is intelligent enough to spot those that might attempt to trick him, but his age still leaves him naive in many shades, and open to corruption from the wrong sources.<br><br></div>
+<div id="history"><h1>Jackson's Life</h1>Jackson Jacob Bello was born to Miranda Bello and Bryce Williams in a Chicago city hospital, during an extremely hot summer day. Although originally an unplanned conception by Miranda -- an R&B performer in the local club scene -- and Bryce -- one of her hired musicians -- the couple decided to keep the child, although Bryce was often a distant father, moving on and performing with other acts while his mother maintained major care over their son. As such, Jackson was raised as a Bello, and -- despite being on friendly enough terms -- did not associate much with his fathers family, primarily because of the unfortunate situation the child found himself in.<br><br>Like his mother, Jackson was born with a  strange genetic disease that preys on the afflicted’s immune system, constantly lowering it and suscepting them to greater illness. Having hoped it would not spread to her child, Miranda was originally devastated, before learning that experimental treatments -- if started early -- could raise Jackson’s chances of beating the disease by the time he reached young adulthood. Jackson was institutionalized within a hospital for most of his life, but it was for the better; the poor boys arms and legs would snap and shatter with the smallest provocation, and his body cut and bled like something out of a horror movie, unrealistic almost in it's fervor to attempt to drain him fully. None of the doctors could truly understand what was happening to the two Bello’s, but they did know one thing: Jackson could be treated to become strong enough to deal with the negative effects of the disease, but it was certainly too late for his mother.<br><br>Miranda Bello passed away when Jackson was only six, leaving him into the care of his father, who eventually made the unwise decision to pull his child away from the hospital. Although it was true that the young boy had certainly come a long way -- through a miracle, the nurses would note, as most medicines had actually failed to deliver on the doctor's promises -- he was still not prepared to leave his known home after the traumatic loss of his caregiver, and even less so when he found his father to be a cold and distant man. Convinced that his stranger of a dad blamed him for his mother's death, Jackson packed his small amount of belongings and set off on his own, running away while his father drank whiskey in his study and mourned.<br><br>Orphan life was not kind to the sickly boy, but he thankfully did not have to deal with it for long. Three weeks after running away, surviving on handouts from local shopkeepers and sleeping in public libraries and parks, Jackson was picked up by police after a number of witnesses alerted the authorities about someone so young on their own. In a normal circumstance, he would have likely been identified and returned to his father, but by either chance or destiny, an echo of the old world had come to the new. A malevolent spirit, ancient and nameless, had been hunting on the streets of Chicago that night; it tore a portal from it's magical realm into a land with far easier and more terrified prey, specifically children, which it feasted on quite often.<br><br>The spirit came to Jackson while he sat crying in an Officers car, afraid to return home but weary from his time living without any help. In disguise, it pretended to be a special friend, unlocking the car door and leading him away from the parking lot in which the officer had stopped in while he went to relieve himself. For hours the young boy fell deeper into the illusion, learning about the secrets of the old world, and the existence of magic. Once they had traveled deep into a dark alley of the city, the creature instantly shifted from trickster spirit to voracious beast, a half-ethereal monstrocity with gaping jaws and jagged teeth. Magic swelled around it, and in that very moment an ancient pathway within the young Bello’s body awakened, sensing the ambient mana in the air and capitalizing on it, fully awakening the latent magical potential that every human possesses...Or perhaps even more special still.<br><br>The child can not remember how he managed to defend himself against the nightmare, nor how he bypassed it and jumped through the portal originally intended to transport a corpse. He does not even remember how he came to find a grand nexus after traveling through a world of unknown properties; his only memory after being betrayed by his “special friend” is awaking inside of a Nexus, a strong place of magic held in multiple universes which can be used to travel along the planes of existence. He remained within just long enough to learn he was a practitioner of Faith Magic, and that every beginner of magic must seek out a learning institution to grow stronger. With no other option in mind, Jackson gathered his belongings once again and set out for the newly emerged Ulreich University, having found an invitation only a few days after his life was flipped upside down.</div>
+<div id="faith"><h1>Faith Magic Spells</h1><h2>Paige</h2><u>(:@):</u> Jackson channels his faith mana to a specific point in his body, creating a condensed orb of magic. This orb can be shattered over himself, or tossed at a target within a 15 foot range of him, where it will shatter instead. Upon shattering, the orb blesses its target with an infusion of magical energy, increasing their base strength by x1.5, scaling to x2 at mage (Upper limit x2 at paige, x2.5 at mage). Jackson may create two of these orbs at once upon reaching mage, but only if they are both being sent to outside targets; to buff himself, Jackson cannot actively keep a buff on anyone else. These buffs last two rotations before dissipating, and require a one rotation cooldown before it can be channeled again. Any targets under the effect of Jackson’s buffs must remain within 20 feet of him to continue receiving the increase.<br><br><u>Band-Aid-Barricade:</u> Jackson weaves mana through his feet and stomps downward, causing the magic to burst outwards from the ground. This creates a large defensive ward which covers a  4 foot tall and 2 foot wide area in front of him, appearing as a massive vertical band-aid made out of translucent blue energy. This barrier can stop physical and energy attacks of tin ranking, scaling to iron by mage; upon reaching mage, the Band-Aid grows to be 6 feet tall and 3 feet wide, but must still only be created directly in front of him. Now automatically retains the Faith Barrier passive. His construct's durability remains tin (scaling to iron by Mage rank) but can tank one extra hit of the same rank (or equivalent) before breaking. This aspect also scales with him to Mage.<br><br><u>Paiging Doctor Jackson!:</u> Through ambiently weaving his faith magic into his hands, Jackson can perform primitive and basic healing via simple exposure to his unique mana. This requires an extended period of physical contact, but allows him to mend minor wounds such as basic cuts, bruises, and can numb minor to moderate pain caused by non-magical means. The duration of his contact, as well as the amount of mana he uses is dependant on the severity of the damage. Upon reaching mage, Jackson will be able to use this spell to heal moderate flesh wounds that would require stitches, as well as mending issues such as sprained joints and deeply bruised tissue. It should be noted that the only real cooldown this ability possesses is the time it takes the child to laugh at his own dumb pun after casting.<br><br><h2>Mage</h2><u>(:@) Upgrade: (:@ :@):</u> When casting this spell on other people, this ability remains widely unchanged; Jackson may now select up to three targets (scaling to four at Expert Mage), and fire a ball of shattered magic towards them, infusing them with an x2 buff to their strength modifier. He can only created two balls at once, and must aim them all separately when casting on multiple people. Although this feature does not scale, it's upper limit increases to x3, and x4 at expert mage. In addition, the spell now lasts three rotations, with a one post cooldown. The range limit on proximity to Jackson does not increase. When this spell is cast on Jackson himself, it takes on another property entirely. Now, a constant cycle of buffing faith mana envelops Jackson like an aura, coating him in a 2 foot radius around his body that increases the fluidity of his movement while his limbs are close to himself. Although he does not actually gain x2 speed, his quick movements (like punches and kicks, or jumps and the first part of a dodge) move twice as fast as long as it is only within 2 feet of himself. This means if he attempts to punch someone, his fist only moves with double speed while it’s at maximum two feet away from his body. On top of this, his strength is increased by x2 as well, scaling to x3 for single purpose use by Expert mage. When casting this spell on himself, he cannot cast it on ANYONE else.<br><br><u>Band-Aid Barricade Upgrade: Band-Aid Barridome:</u> In addition to the defensive properties of this spell increasing to Cobalt by expert mage, it's maximum height and length are also increased by an additional 2x1 feet. This leaves the barricades max dimensions to 6 feet long and 3 feet wide, although it can be made smaller than this on command. If this spell is cast with additional mana, it can be fired like a projectile, either coming in contact with the caster himself or any target he can fire at in a straight line up to 30 feet away. When it strikes a living person or object, it will expand, transforming into a shell like formation and enveloping them entirely. This will only work if the target can crouch and condense their bodies to fit inside of a 5 foot space, meaning most people below 8 feet should be fine. It will remain like this until the barrier is destroyed, or until the person trapped inside touches against the inner walls, signaling that they want to exit. The barricade will only remain for up to 3 post rotations, or until Jackson exits a 30 foot distance from the defense.<br><br><u>Paiging Doctor Jackson upgrade: MAGING doctor Jackson!:</u> Not much is increased with this upgrade, other than its effectiveness against treating cuts and damaged tissue. Jackson can now stop and seal up cuts and tears of any size and intensity as long as no major tissue has been destroyed or removed, as he can only regenerate skin tissue and muscle fiber, and not actually recreate limbs or majorly damaged body parts. Knotted muscles and heavily battered and damage tissue of any part of the body can also be fixed, allowing Jackson to cure pretty much any injury created by bare -- standard strength -- hands, as long as it is not a fatal blow. Physical contact must still be maintained between doctor and patient for the duration of the healing process.<br><br><u>WAT?:</u> Jackson makes physical contact with another biological being, scanning their body slightly with his magic for any adverse effects. This will give him a basic diagnostic of physical and mundane injuries, but can also detect spell effects from any tree as long as they are his rank or below, scaling to expert mage. This spell can only be done on one section of the body at a time, and must be cast over numerous posts for a full body diagnostic. The areas he can check in on rotation each are: arms, legs, body, head.<br><br><u>Gel Sphere Upgrade: Nyoom:</u> Jackson starts by creating a big fat sticky gel sphere, but fills it with faith magic which causes it to expand into a cord like construct. This cord can be fired in a straight line, and will extend to up to 30 feet away before stopping and ricocheting back to the caster. However, if an object or wall is struck by the cord, it will instantly stick to the material, allowing Jackson to decrease the length of the construct and sending him flying forwards as if he were using a grappling hook. If Jackson attaches this spell to another living person, it will only stick to them if they are willing and consent, making it useless against enemies. If consent is given, the sticky cord will transform into a belt, wrapping around the target and keeping them contained to Jackson’s cord as long as they remain within 30 feet of him. At any point, Jackson can retract this cord, sending those attached sailing backwards at impressive speed, their bodies gliding safely and experiencing very little wind resistance unless created by a spell. At any point -- or once the cord retracts all the way -- Jackson can cause this spell to disperse. It has a toughness if Iron, scaling to Cobalt by Expert mage, but does not gain the defense construct buff.<br><br><h2>Expert Mage</h2><u>(:@ :@) Upgrade: (:@ :@ :@):</u> When Jackson casts this version of the spell, he must take care not to overuse it, as it expends a large portion of his mana when used for a long period of time. The large aura around his body expands to four feet in diameter around him, and the swiftening effect of his bodily movements within this aura remains; in addition, other entities that enter this radius will find their speeds reduced to half, only dispelling this debuff if they are above Expert Mage, scaling to High mage. Jacksons strength is also increased to an incredible x4, although this does not scale further with any rank. The upper limit for his strength remains at x5, and this spell can only be cast on either Jackson himself, or ONE target that is always within 20 feet of him. The effect lasts a maximum of three rotations on another person, with a cooldown of two rotations. Jackson can recast this on himself without cooldown, but doing so would exceed a large portion of his mana reserves.<br><br><u>Band-Aid Barricade Upgrade: Band-Aid Booty Nades!:</u> The size dimensions of the original spell and it's first upgrade remain the same, only increasing in rank by their toughness capacities. In addition, Jackson may now create two small versions of this spell which coat his feet -- and only his feet, this cannot be applied to others -- at the bottom and wrap them in Band-Aid like faith structures. While this buff is active, Jackson can move at x2 speeds, with an upper limit of x4. In addition, Jackson can at any point cause these boot-coverings to explode harmlessly, jettisoning him up to 50 feet away at x2 speed while flying in the air. This does not mean it stacks with his baseline x2 speed buff, just that it translates to his trajectory, whereas most jumps and falls would not. Jackson can only recover from these blasts without falling and injuring himself if he is able to cast another set of boot coverings over his legs before impacting with the ground; they will absorb most of the force, allowing him to land cleanly.<br><br><u>MAGING doctor Jackson! Upgrade: Maging EXPERT Jackson!:</u> As usual, the increase in ability on Jackson's healing is slow and steady. Jackson may now heal cracked and slightly damaged bone, and also SET broken bones back into their original positions, allowing them to either heal naturally or be fixed by a higher ranking mage. Massive muscle tissue destruction and bodily harm can also be quickly fixed and corrected at this level, and as Jackson scales to high mage, he can even regenerate small tissue (like fingers and toes, or cut off body mass no larger than a finger or toe), and CONNECT severed tissue. This means that -- although he cannot regenerate limbs -- he can reattach limbs to severed stumps as long as he can treat the wound within 5 rotations of it's happening. Broken bones can also be fixed at high mage, but one rotation must be spent setting the bone, and another must be set repairing it. This can be upgraded to be faster at high mage proper.<br><br><h2>High Mage Medium</h2>Note: This medium is UNAPPROVED. It cannot be used in Ulreich until it has been looked at by an approver.<br><br><u>Enchanted Sick Mask:</u>  Through some friendly adult help, Jackson has converted one of his old hospital sick masks into a working medium, fully aiding him in his casting of both Faith and Magus Manatism spells. Due to the polar opposite nature of how he uses both of his trees, the mask must be set up in one of two positions in order to access it's enhancing abilities. When worn on his face, the medium is in “Faith Mode”: this imparts him with a x1.5 increase in range on all of his faith constructs, and protects him from inhalation based attacks, such as position gas, certain projectiles, and diseases and curses spread in this sort of method. These attacks must be High Mage or lower for the mask to fully filter them out. In addition, the Mask acts as a source of oxygen, letting him maintain breath in harsh environments. The most potent Faith affect the medium has however is its ability to store healing spells; if Jackson charges a basic healing spell into his Sick-mask, and then attaches the mask onto an injured person, the healing will translate to them, curing them of their ailments. Please note that Jackson must still know what's wrong with the patient, and cast a spell specifically intending to fix a wound into his mask for this to work, it simply allows him to prepare healing in advance and let the faith magic take its course without having to physically touch his patient. When the mask remains tied around his neck, but is lifted down from his face, the medium is considered to be in “Manatism” mode. When in this mode, any Manatism constructs created by Jackson move twice as fast while within 20 feet of him, and are able to “phase” through his body, meaning that they deconjure and reconjure behind him whenever they would normally bash through him. This happens swift enough to appear as though they are simply phasing through Jackson’s body, but this takes a slight toll of mana to emulate, and can only be done in short bursts of 2 rotations or less. A cooldown of 4 rotations must pass before this can be activated once more. The final ability this mask possesses has no use in combat, but was specially added by Jackson through Emily’s request; although the white hospital mask can be marked on, if Jackson wipes his hand against it, any stains will slip off, as if created by magic marker. This allows Emily to paint and draw on his mask as she wishes...Much to Jacksons dismay.<br><br></div>
+<div id="magus"><h1>Magus Manatism Spells</h1><h2>Paige Spells</h2>Note: These spells are UNAPPROVED. They cannot be used in Ulreich until they have been looked at by an approver.<br><br><u>Stilts:</u> Jackson creates a very basic manatism construct that attaches to his waist and wraps around his legs. At Jacksons feet level the construct turns into two solid appendages, mimicking the shape of adult human legs, with the ends of Jackson’s biological limbs coming in at around knee level. This increases Jackson's height to be around 6 feet tall, and allows him to walk around as if the constructs were part of his own body. Despite this, they are primitive in nature, allowing Jackson to currently only walk and jog at moderate speed while he wears them. Any speed buffs that are active on him will not convert over to these silts for now, as they are too basic in nature to fully respond to Jackson’s more advanced movements. This construct is currently tin level toughness, scaling to iron by mage.<br><br><u>Sand Shoveler:</u> Jackson creates a very basic, but very large construct of manatism, designed to look like a shovel. It stands at six feet from tip to edge, but is light as a feather and very easily controlled. Jackson may decrease and increase the length of the shovel’s shaft at will, shortening it to his comfort when need be; the construct is tin at paige, scaling to iron at mage. It responds to handling as if it were very light weight, but using it as a weapon will find it to strike with as much force as a regular shovel of that size.<br><br><u>Blueberry Bombs:</u> Jackson creates a handful of very small, marble like constructs of manatism and tosses them at an area up to 10 feet away. There are three balls in total, scaling to five at mage, and as soon as they strike against an object, they will bounce off harshly, traveling no farther than five feet before dispersing. If the balls are thrown in a small room, or against the corners of a wall, they will continue to bounce over and over again for two rotations, covering a 5 foot radius in a torrent of bouncing constructs which will strike targets and bounce off them still. At it's current level, these balls leave nothing more than bruises, and are tin toughness, ranking to iron by mage.<br><br><h2>Mage</h2>Note: These spells are UNAPPROVED. They cannot be used in Ulreich until they have been looked at by an approver.<br><br><u>Silts Upgrade: Rockem’Sockem:</u> In addition to the leg constructs that connect to the original belt, a set of similar attachments for Jackson’s arms now exist, increasing his arms length to be equal to an average sized six foot male. Having practiced and honed the technique to a certain degree, the arms and legs now command more delicately to Jackson, allowing him to move just as if he were using his own limbs. This allows buffs to now work on him, his highcap for any movement related abilities at x4, although the manatism construct itself has no innate modifier. The toughness of this contraption is Iron, but will scale to Cobalt at Expert Mage.<br><br><u>Sand Shoveler Upgrade: The Yeetmobile:</u> In addition to increasing the toughness rating of the shovel to scale to Cobalt by expert mage, Jackson may also now fire off the head of the shovel as a projectile, flying up to 45 feet away. If it connects with a defense, begin to shovel it away: magic defenses below this spells rank will be destroyed in a single post, but magic defenses OF the spells rank will take two rotations to destroy. Although this is slower than most projectiles, the shovel has the benefit of not being destroyed when attacking a defense this way. It can still be destroyed by attacks of Iron toughness, scaling to Cobalt at Expert mage. If the head of the shovel manages to bypass defenses and land on a persons feet, they will experience a horrible side effect if they are less than 300 pounds. The shovels head will scoop them up, and toss them into the air at least 20 feet high, causing them to smash horribly against a wall or a roof if there is one present. Jackson can also use this to shoot himself 20 feet into the air, or others he can effectively land the spell on.<br><br><u>Blueberry Bombs Upgrade: Orbital Defense Bouncies:</u> The number of marbles Jackson can create is now increased to eight, and being struck by them imparts damage equal to a metal ball of similar size being shot at high velocity. They can destroy up to Iron defenses, scaling to Cobalt at mage. Jackson can now also drop these marbles down on himself, causing them to orbit around his body in a swift manner, controlled entirely by the casters mind. If the caster witnesses an attack coming toward him, he can call out these balls to move, striking the attack and destroying it. It takes four balls shot as one projectile to destroy a spell of mage rank, scaling to Expert and capping. For every rank below an incoming attack is, one less ball is required to fire off, stopping at one. Any spell above this spells rank will be damaged by all eight balls, but will not be destroyed.<br><br><u>Sapphire Strike:</u> Jackson fills his hand with manatism mana, hauling back and punching his fist forward as a true strike, just as if he intended to hit someone in front of him. Upon releasing the mana at the pinnacle point of “contact”, jackson creates a small gauntlet like construct over his shoulder, around the same size as a boxing glove. This gauntlet will quickly travel towards the location the caster punched towards, striking at a distance of up to 5 feet away to 20. The Gauntlet is Iron toughness, scaling to Cobalt by expert mage, and upon striking a surface, will explode into pure manatism mana and resolidify around an 5 foot radius, instantly destroying any matter inside of it under Iron grade, scaling to Cobalt.<br><br></div>
+<div id="textemily"><h1> Emily Rose</h1>"She's the new girl! She lives in a plant house in the garden by the school; it looks really nice, but I don't know how she sleeps in it! I don't think Emily likes to talk, but she seems to be lonely, and I know how that feels. She draws in the dirt and plays with me, and she's nice, so she's my friend now."<br><br>To view this characters information, <a target="_blank" href="https://www.sorceress.chatango.com/">please click here.</a></div>
+<div id="textjune"><h1> June O'Connor</h1>"June was my first friend on the school island! Everyone in that city was super mean, and when I first met X she was nice, but it sort of felt like being walked around by a parent. Spending time with June when we first met made me feel like going to stupid school was worth it, even aside from all the cool powers. It was nice to know I had a friend, and she introduced me to more kids too!"<br><br>To view this characters information, <a target="_blank" href="https://www.mutt.chatango.com/">please click here.</a></div>
+<div id="textlynne"><h1>Lynne Celest</h1>"She's a bunny girl! That's weird, but cool! So many people here are animals, but she's nice and we slip and slode together!"<br><br>To view this characters information, <a target="_blank" href="https://www.bubble.chatango.com/">please click here.</a></div>
+<div id="textzinnia"><h1>Zinnia</h1>"She's got bigger horns than June, and the way she talks makes me think of a far away place. I didn't get to talk to her much, but that day we all played together was the funnest thing since Momma died."<br><br>To view this characters information, <a target="_blank" href="https://www.ashaire.chatango.com/">please click here.</a></div>
+<div id="textgossamer"><h1>Gossamer</h1>"She's an elf like in them books I didn't read! She's really nice, and June's momma, a friendly one like the girls back in the hospital. She gave me pizza and talked to me nice, so I like her."<br><br>To view this characters information, <a target="_blank" href="https://www.Fae.chatango.com/">please click here.</a></div>
+<div id="textx"><h1>X</h1>"I don't know lady X very well, but she reminds me of the school teachers backs home, and she seems sorta angry a lot. She was nice to me, and she's going to teach me how to be a better doctor mage, but I feel like I shouldn't start any trouble around her..."<br><br>To view this characters information, <a target="_blank" href="https://www.Being.chatango.com/">please click here.</a></div>
+</div>
+<embed style="height: 0%; width: 0%;"src="Shadows.mp3" autostart="true" loop="true">
+</html>
